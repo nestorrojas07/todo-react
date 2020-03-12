@@ -8,10 +8,7 @@ function HelloWorld(){
   );
 }
 
-function App() {
-  return (
+const App = () => 
     <div>This is the main component: <HelloWorld /></div>
-  );
-}
 
 export default App;

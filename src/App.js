@@ -2,13 +2,21 @@ import React from 'react';
 import './App.css';
 
 
-function HelloWorld(){
+function HelloWorld(props){
   return (
-    <div id="hello" >hello world</div>
+  <div id="hello" >{props.texto}</div>
   );
 }
 
-const App = () => 
-    <div>This is the main component: <HelloWorld /></div>
+function App(){
+  return (
+      <div>
+        This is the main component: 
+        <HelloWorld texto="Hello world Nestor" /> 
+        <HelloWorld texto="Hello All  world " />
+        <HelloWorld/> 
+        </div>
+    );
+}
 
 export default App;

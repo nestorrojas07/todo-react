@@ -36,7 +36,7 @@ class HelloWorld extends React.Component{
     );
   }
   
-  toogleShow(){
+  toogleShow = () => {
     const { show } = this.state;
     this.setState( { show: !show});
   }
